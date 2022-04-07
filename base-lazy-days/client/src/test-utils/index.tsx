@@ -14,8 +14,8 @@ setLogger({
 });
 
 const generateTestQueryClient = () => {
-  const client = generateQueryClient()
-  const options = client.getDefaultOptions()
+  const client = generateQueryClient();
+  const options = client.getDefaultOptions();
   options.queries = { ...options.queries, retry: false };
   return client;
 };
